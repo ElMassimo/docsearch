@@ -18,7 +18,8 @@
   ],
   "source": "src/index.ts",
   "types": "dist/esm/index.d.ts",
-  "module": "dist/esm/index.js",
+  "main": "dist/esm/index.js",
+  "type": "module",
   "scripts": {
     "build:clean": "rm -rf ./dist",
     "build:esm": "babel src --root-mode upward --extensions '.ts,.tsx' --out-dir dist/esm",
